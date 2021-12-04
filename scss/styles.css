@@ -1,6 +1,8 @@
+/*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+/*==================== VARIABLES CSS ====================*/
 :root {
-  --ff-rubik: 'Rubik', sans-serif;
+  /*========== Colors ==========*/
   --cc-user-color: hsl(246, 80%, 60%);
   --cc-work-color: hsl(15, 100%, 70%);
   --cc-play-color: hsl(195, 74%, 62%);
@@ -12,15 +14,40 @@
   --cc-db: hsl(235, 46%, 20%);
   --cc-dsb: hsl(235, 45%, 61%);
   --cc-pb: hsl(236, 100%, 87%);
+  /*========== Fonts & Weights ==========*/
+  --ff-rubik: 'Rubik', sans-serif;
+  --font-light: 300;
+  --font-medium: 400;
+  --font-heavy: 500;
 }
 
+/*==================== BASE ====================*/
 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
   background-color: var(--cc-vdb);
   font: var(--ff-rubik);
+  font-size: 1rem;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+/*==================== LAYOUT ====================*/
 /*# sourceMappingURL=styles.css.map */
