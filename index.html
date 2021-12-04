@@ -3,73 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <!------------ CSS STYLE SHEET ------------>
   <link rel="stylesheet" href="scss/styles.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
   
-  
 </head>
 <body>
-  
-  Report for
-  Jeremy Robson
-  
-  Daily
-  Weekly
-  Monthly
-  
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-  
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-  
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-  
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-  
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-  
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs monthly
-  
-  
+  <main>
+    
+    <div class="user__card grid">
+      <div class="card__top">
+        <div class="user-avatar">
+          <img src="images/image-jeremy.png" alt="Jeremy Robson Profile Picture">
+        </div>
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
+      </div>
+      <div class="card__bottom grid">
+        <ul>
+          <li>Daily</li>
+          <li>Weekly</li>
+          <li>Monthly</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="card card__work">
+
+      <div class="card__bg-img">
+        <img src="images/icon-work.svg" alt="">
+      </div>
+      <div class="card__info grid">
+        <h2 class="card__title">Work</h2>
+        <div>
+          <img src="/images/icon-ellipsis.svg" alt="">
+        </div>
+      </div>
+
+      <!-- Daily Hours -->
+      <div class="card__daily grid">
+        <h3>5hrs</h3>
+        <small>Previous Day - 7hrs</small>
+      </div>
+
+      <!-- Weekly Hours -->
+      <!-- <div class="card__weekly grid">
+        <h3>32hrs</h3>
+        <small>Previous Week - 36hrs</small>
+      </div> -->
+
+      <!-- Monthly Hours -->
+      <!-- <div class="card__monthly grid">
+        <h3>103hrs </h3>
+        <small>Previous Month - 128hrs</small> 
+      </div> -->
+      
+    </div>
+    
+    
+    <div class="card card__play">
+
+      <div class="card__bg-img">
+        <img src="images/icon-play.svg" alt="">
+      </div>
+      <div class="card__info grid">
+        <h2 class="card__title">Play</h2>
+        <div>
+          <img src="/images/icon-ellipsis.svg" alt="">
+        </div>
+      </div>
+
+      <!-- Daily Hours -->
+      <div class="card__daily grid">
+        <h3>1hrs</h3>
+        <small>Previous Day - 2hrs</small>
+      </div>
+
+      <!-- Weekly Hours -->
+      <!-- <div class="card__weekly grid">
+        <h3>10hrs</h3>
+        <small>Previous Week - 8hrs</small>
+      </div> -->
+
+      <!-- Monthly Hours -->
+      <!-- <div class="card__monthly grid">
+        <h3>23hrs </h3>
+        <small>Previous Month - 29hrs</small>
+      </div> -->
+
+    </div>
+    
+    <div class="card card__study">
+
+      <div class="card__bg-img">
+        <img src="images/icon-study.svg" alt="">
+      </div>
+      <div class="card__info grid">
+        <h2 class="card__title">Study</h2>
+        <div>
+          <img src="/images/icon-ellipsis.svg" alt="">
+        </div>
+      </div>
+
+      <!-- Daily Hours -->
+      <div class="card__daily grid">
+        <h3>0hrs</h3>
+        <small>Previous Day - 1hr</small>
+      </div>
+
+      <!-- Weekly Hours -->
+      <!-- <div class="card__weekly grid">
+        <h3>4hrs</h3>
+        <small>Previous Week - 7hrs</small>
+      </div> -->
+      
+      <!-- Monthly Hours -->
+      <!-- <div class="card__monthly grid">
+        <h3>13hrs </h3>
+        <small>Previous Month - 19hrs</small>
+      </div> -->
+
+    </div>
+    
+    <div class="card card__exercise">
+
+      <div class="card__bg-img">
+        <img src="images/icon-exercise.svg" alt="">
+      </div>
+      <div class="card__info grid">
+        <h2 class="card__title">Exercise</h2>
+        <div>
+          <img src="/images/icon-ellipsis.svg" alt="">
+        </div>
+      </div>
+
+      <!-- Daily Hours -->
+      <div class="card__daily grid">
+        <h3>1hr</h3>
+        <small>Previous Day - 1hr</small>
+      </div>
+
+      <!-- Weekly Hours -->
+      <!-- <div class="card__weekly grid">
+        <h3>4hrs</h3>
+        <small>Previous Week - 5hrs</small>
+      </div> -->
+
+      <!-- Monthly Hours -->
+      <!-- <div class="card__monthly grid">
+        <h3>11hrs </h3>
+        <small>Previous Month - 18hrs</small>
+      </div> -->
+
+    </div>
+    
+    <div class="card card__social">
+
+      <div class="card__bg-img">
+        <img src="images/icon-social.svg" alt="">
+      </div>
+      <div class="card__info grid">
+        <h2 class="card__title">Social</h2>
+        <div>
+          <img src="/images/icon-ellipsis.svg" alt="">
+        </div>
+      </div>
+
+      <!-- Daily Hours -->
+      <div class="card__daily grid">
+        <h3>1hr</h3> 
+        <small>Previous Day - 3hrs</small>
+      </div>
+
+      <!-- Weekly Hours -->
+      <!-- <div class="card__weekly grid">
+        <h3>5hrs</h3> 
+        <small>Previous Week - 10hrs</small>
+      </div> -->
+
+      <!-- Monthly Hours -->
+      <!-- <div class="card__monthly grid">
+        <h3>21hrs </h3> 
+        <small>Previous Month - 23hrs</small> 
+      </div> -->
+
+    </div>
+    
+    <div class="card card__self-care">
+
+      <div class="card__bg-img">
+        <img src="images/icon-self-care.svg" alt="">
+      </div>
+      <div class="card__info grid">
+        <h2 class="card__title">Self Care</h2>
+        <div>
+          <img src="/images/icon-ellipsis.svg" alt="">
+        </div>
+      </div>
+      
+      <!-- Daily Hours -->
+      <div class="card__daily grid">
+        <h3>0hrs</h3> 
+        <small>Previous Day - 1hr</small>
+      </div>
+
+      <!-- Weekly Hours -->
+      <!-- <div class="card__weekly grid">
+        <h3>2hrs</h3>
+        <small>Previous Week - 2hrs</small>
+      </div> -->
+
+      <!-- Monthly Hours -->
+      <!-- <div class="card__monthly grid">
+        <h3>7hrs </h3> 
+        <small>Previous Month - 11hrs</small>
+      </div> -->
+
+    </div>
+    
+  </main>
   <script src="js/script.js"></script>
 </body>
 </html>
