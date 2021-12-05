@@ -1,3 +1,4 @@
+AOS.init();
 // line 2 selects all items with a class of .list-item
 const items = document.querySelectorAll('.list-item');
 

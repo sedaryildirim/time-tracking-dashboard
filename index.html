@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="scss/styles.css">
+  <link rel="stylesheet" href="scss/aos.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
@@ -15,7 +16,7 @@
   <main>
     
     <!------------ PROFILE CARD ------------>
-    <div class="profile-card">
+    <div class="profile-card" data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
       <div class="profile-details">
         <div class="profile-picture">
           <img src="images/image-jeremy.png" alt="" aria-hidden="true">
@@ -35,7 +36,7 @@
     </div>
     
     <!------------ WORK CARD ------------>
-    <div class="work-card card">
+    <div class="work-card car" data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
       <div class="work-banner banner">
         <img src="images/icon-work.svg" alt="">
       </div>
@@ -44,7 +45,7 @@
         
         <div class="card-title">
           <h3>Work</h3>
-          <img tabindex="0" src="images/icon-ellipsis.svg" alt="work more options">
+          <img tabindex="0" src="images/icon-ellipsis.svg" alt="work more options" data-aos-easing="ease-out-cubic">
         </div>
         <div class="card-content">
           <p class="work-hours hours">32hrs</p>
@@ -54,7 +55,7 @@
     </div>
     
     <!------------ PLAY CARD ------------>
-    <div class="play-card card">
+    <div class="play-card card" data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
       <div class="play-banner banner">
         <img src="images/icon-play.svg" alt="">
       </div>
@@ -72,7 +73,7 @@
     </div>
     
     <!------------ STUDY CARD ------------>
-    <div class="study-card card">
+    <div class="study-card card" data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
       <div class="study-banner banner">
         <img src="images/icon-study.svg" alt="">
       </div>
@@ -90,7 +91,7 @@
     </div>
     
     <!------------ EXERCISE CARD ------------>
-    <div class="exercise-card card">
+    <div class="exercise-card card" data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
       <div class="exercise-banner banner">
         <img src="images/icon-exercise.svg" alt="">
       </div>
@@ -108,7 +109,7 @@
     </div>
     
     <!------------ SOCIAL CARD ------------>
-    <div class="social-card card">
+    <div class="social-card card" data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
       <div class="social-banner banner">
         <img src="images/icon-social.svg" alt="">
       </div>
@@ -126,7 +127,7 @@
     </div>
     
     <!------------ SELF CARE CARD ------------>
-    <div class="self-care-card card">
+    <div class="self-care-card card" data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
       <div class="self-care-banner banner">
         <img src="images/icon-self-care.svg" alt="">
       </div>
@@ -145,6 +146,7 @@
     
   </main>
   
+  <script src="js/aos.js"></script>
   <script src="js/script.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
