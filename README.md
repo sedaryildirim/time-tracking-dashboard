@@ -43,6 +43,9 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### What I learned
 
+slightly better understanding of JS concepts
+adding other JS libraries for cool animations
+
 ### Continued development
 
 ### Useful resources
