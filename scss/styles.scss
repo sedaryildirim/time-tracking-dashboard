@@ -65,6 +65,7 @@ main {
 img {
     max-width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -84,6 +85,12 @@ img {
     background-color: var(--cc-db);
     padding: 1rem;
     border-radius: 15px;
+}
+
+.card-details:hover {
+    background-color: var(--cc-dsb);
+    cursor: pointer;
+  
 }
 
 .card-content {
@@ -111,7 +118,7 @@ img {
 
 span {
     font-size: 0.75rem;
-    color: var(--cc-dsb);
+    color: var(--cc-pb);
 }
 
 h1, h3 {
@@ -263,5 +270,100 @@ h1, h3 {
 }
 
 @media screen and (min-width: 1000px) {
+    main {
+        max-width: 1000px;
+        max-height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1em 1em;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "profile-card work-card play-card study-card"
+        "profile-card exercise-card social-card self-care-card";
+    }
+    
+    .profile-card {
+        grid-area: profile-card;
+        align-self: stretch;
+    }
+    
+    .profile-details {
+        align-items: flex-start;
+        display: flex;
+        padding: 1.5rem;
+        flex-direction: column;
+    }
+    
+    .profile-picture {
+        justify-self: flex-start;
+        margin-bottom: .5rem;
+    }
+    
+    .profile {
+        padding: 0;
+        margin: 0;
+    }
 
+    .profile-name {
+        max-width: 100px;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        margin-bottom: 2rem
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .list-item {
+        font-size: 1rem;
+        margin: .3rem;
+    }
+    
+    .work-card {
+        grid-area: work-card;
+    }
+    
+    .exercise-card {
+        grid-area: exercise-card;
+    }
+    
+    .play-card {
+        grid-area: play-card;
+    }
+    
+    .study-card {
+        grid-area: study-card;
+    }
+    
+    .social-card {
+        grid-area: social-card;
+    }
+    
+    .sef-care-card { 
+        grid-area: self-care-card;
+    }
+    
+    .card {
+        margin-bottom: 0;
+    }
+    
+    .card-content {
+        display: block;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        
+        & p {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        
+        & span {
+            font-size: 1rem;
+        }
+    }
 }
