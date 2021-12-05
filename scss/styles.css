@@ -258,6 +258,21 @@ h1, h2 {
   }
 }
 
+@media screen and (min-width: 374px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 @media screen and (min-width: 650px) {
   main {
     display: -ms-grid;
@@ -271,7 +286,7 @@ h1, h2 {
         grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 1em 1em;
     grid-auto-flow: row;
-        grid-template-areas: "profile-card profile-card" "work-card play-card" "study-card exercise-card" "social-card self-care-card";
+        grid-template-areas: "profile-card profile-card" "work-card play-card" "study-card exercise-card" "social-card self-care-card";
   }
   .profile-card {
     -ms-grid-row: 1;
@@ -323,7 +338,7 @@ h1, h2 {
         grid-template-rows: 1fr 1fr;
     gap: 1em 1em;
     grid-auto-flow: row;
-        grid-template-areas: "profile-card work-card play-card study-card" "profile-card exercise-card social-card self-care-card";
+        grid-template-areas: "profile-card work-card play-card study-card" "profile-card exercise-card social-card self-care-card";
   }
   .profile-card {
     -ms-grid-row: 1;
