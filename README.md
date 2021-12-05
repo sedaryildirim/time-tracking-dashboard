@@ -40,19 +40,12 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
 ### Continued development
 
 ### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 
 ## Author
 
@@ -62,3 +55,4 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ## Acknowledgments
 - [Frontendmentor.io](https://www.frontendmentor.io/)
+- [AOS](https://michalsnik.github.io/aos/)
